@@ -1,0 +1,4 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Tally has no network access in any build type. Hot reload is therefore unavailable:
+         use `flutter build apk` + adb install (see README). -->
+</manifest>

@@ -1,0 +1,8 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <!-- Tally gate: four strokes in lime, struck through in white. Everything sits inside the 66dp adaptive safe zone. -->
+    <path android:pathData="M32,33 L32,75 M45,33 L45,75 M58,33 L58,75 M71,33 L71,75"
+        android:strokeColor="#C8FF3C" android:strokeWidth="7.5" android:strokeLineCap="round" />
+    <path android:pathData="M24,66 L80,42"
+        android:strokeColor="#FFFFFF" android:strokeWidth="7.5" android:strokeLineCap="round" />
+</vector>

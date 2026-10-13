@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "rulesVersion": "2026.10.13-1",
+  "note": "Derived from calibration dumps on Pixel 8a (API 37). ids are short names; the detector prefixes '<pkg>:id/'. Parts are joined with '|' to form the video identity key.",
+  "apps": {
+    "com.instagram.android": {
+      "targetAppVersion": "450.0.0.50.77",
+      "ignoreEventClasses": ["android.widget.SeekBar"],
+      "player": {
+        "anyVisibleId": ["clips_viewer_view_pager"],
+        "minVisibleWidthPx": 200,
+        "minVisibleHeightPx": 200
+      },
+      "identity": [
+        { "id": "clips_media_component", "field": "desc", "visibleOnly": true },
+        { "id": "clips_caption_component", "field": "desc", "visibleOnly": true, "descendant": true }
+      ]
+    },
+    "com.google.android.youtube": {
+      "targetAppVersion": "21.40.161",
+      "ignoreEventClasses": ["android.widget.SeekBar"],
+      "player": {
+        "anyVisibleId": ["reel_recycler"],
+        "minVisibleWidthPx": 200,
+        "minVisibleHeightPx": 200
+      },
+      "identity": [
+        { "match": "Go to channel ", "field": "desc", "visibleOnly": true, "after": "Go to channel " },
+        { "id": "reel_time_bar", "field": "desc", "descendant": true, "after": " of " }
+      ]
+    }
+  }
+}
